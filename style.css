@@ -1,0 +1,85 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+#imgbox {
+    margin-top: 20px;
+}
+
+#qrImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-picture {
+    width: 200px; /* Adjust as needed */
+    display: inline-block;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.profile-info h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #4a34c7; /* Adjust the color as needed */
+}
+  /* Normal state styles */
+  .hoverable {
+    color: #4a34c7; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover state styles */
+.hoverable:hover {
+    color:red; /* New text color on hover */
+}
