@@ -83,3 +83,6 @@ body {
 .hoverable:hover {
     color:red; /* New text color on hover */
 }
+a{
+    text-decoration: none;
+}
