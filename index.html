@@ -40,36 +40,38 @@ function generateQR() {
     qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrtext;
 }
 
-// function downloadQR() {
-//     let qrImageSrc = document.getElementById("qrImage").src;
-//     let downloadLink = document.createElement("a");
-//     downloadLink.href = qrImageSrc;
-//     downloadLink.download = "qr_code.png";
-//     downloadLink.click();
-// }
 function downloadQR() {
-    let qrImage = document.getElementById("qrImage");
-
-    // Create a canvas element
-    let canvas = document.createElement("canvas");
-    canvas.width = qrImage.width;
-    canvas.height = qrImage.height;
-    let ctx = canvas.getContext("2d");
-
-    // Draw the QR code image onto the canvas
-    ctx.drawImage(qrImage, 0, 0);
-
-    // Convert the canvas to a data URL representing the PNG file
-    let dataURL = canvas.toDataURL("image/png");
-
-    // Create a temporary link element
+    let qrImageSrc = document.getElementById("qrImage").src;
     let downloadLink = document.createElement("a");
-    downloadLink.href = dataURL;
+    downloadLink.href = qrImageSrc;
     downloadLink.download = "qr_code.png";
-
-    // Simulate a click on the link to trigger the download
     downloadLink.click();
 }
+
+
+// function downloadQR() {
+//     let qrImage = document.getElementById("qrImage");
+
+//     // Create a canvas element
+//     let canvas = document.createElement("canvas");
+//     canvas.width = qrImage.width;
+//     canvas.height = qrImage.height;
+//     let ctx = canvas.getContext("2d");
+
+//     // Draw the QR code image onto the canvas
+//     ctx.drawImage(qrImage, 0, 0);
+
+//     // Convert the canvas to a data URL representing the PNG file
+//     let dataURL = canvas.toDataURL("image/png");
+
+//     // Create a temporary link element
+//     let downloadLink = document.createElement("a");
+//     downloadLink.href = dataURL;
+//     downloadLink.download = "qr_code.png";
+
+//     // Simulate a click on the link to trigger the download
+//     downloadLink.click();
+// }
 
 
    </script>
